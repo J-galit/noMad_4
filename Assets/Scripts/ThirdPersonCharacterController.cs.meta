@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: c86348e2779994945b87c12aa11fecb1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - adaptationsShop: {instanceID: 0}
+  - jumpBoostButton: {instanceID: 0}
+  - speedBoostButton: {instanceID: 0}
+  - smallSizeButton: {instanceID: 0}
+  - largeSizeButton: {instanceID: 0}
+  - fasterHealingButton: {instanceID: 0}
+  - largeAttackButton: {instanceID: 0}
+  - fasterAttackButton: {instanceID: 0}
+  - maxAdaptationErrorUI: {instanceID: 0}
+  - attackPrefab: {instanceID: 0}
+  - cam: {instanceID: 0}
+  - coinGet: {instanceID: 0}
+  - coinGetClip: {fileID: 8300000, guid: a4fb0e2b971264044a20f916eed41f3b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
