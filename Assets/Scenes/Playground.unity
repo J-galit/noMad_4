@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 69446665}
   - component: {fileID: 69446664}
   - component: {fileID: 69446663}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 88499933}
   - component: {fileID: 88499932}
   - component: {fileID: 88499931}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 94208030}
   - component: {fileID: 94208029}
   - component: {fileID: 94208028}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 105890728}
   - component: {fileID: 105890727}
   - component: {fileID: 105890726}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (84)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +597,7 @@ GameObject:
   - component: {fileID: 120834577}
   - component: {fileID: 120834576}
   - component: {fileID: 120834575}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1031,7 @@ GameObject:
   - component: {fileID: 140906379}
   - component: {fileID: 140906378}
   - component: {fileID: 140906377}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Cave Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 159126740}
   - component: {fileID: 159126739}
   - component: {fileID: 159126738}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (87)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 168945369}
   - component: {fileID: 168945368}
   - component: {fileID: 168945367}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (68)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 169287645}
   - component: {fileID: 169287644}
   - component: {fileID: 169287643}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   groundDistance: 0.6
   groundMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 64
   jumpForce: 5
   gravity: 12
   coyoteTimeDuration: 0.2
@@ -1933,7 +1933,7 @@ GameObject:
   - component: {fileID: 215799490}
   - component: {fileID: 215799489}
   - component: {fileID: 215799488}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (76)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2038,7 @@ GameObject:
   - component: {fileID: 233937643}
   - component: {fileID: 233937642}
   - component: {fileID: 233937641}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2143,7 +2143,7 @@ GameObject:
   - component: {fileID: 239198658}
   - component: {fileID: 239198657}
   - component: {fileID: 239198656}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2248,7 +2248,7 @@ GameObject:
   - component: {fileID: 244931184}
   - component: {fileID: 244931183}
   - component: {fileID: 244931182}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2353,7 +2353,7 @@ GameObject:
   - component: {fileID: 262736056}
   - component: {fileID: 262736055}
   - component: {fileID: 262736054}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2458,7 +2458,7 @@ GameObject:
   - component: {fileID: 266837421}
   - component: {fileID: 266837420}
   - component: {fileID: 266837419}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (78)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,7 +2697,7 @@ GameObject:
   - component: {fileID: 291198900}
   - component: {fileID: 291198899}
   - component: {fileID: 291198898}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2802,7 +2802,7 @@ GameObject:
   - component: {fileID: 302161869}
   - component: {fileID: 302161868}
   - component: {fileID: 302161867}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3097,7 +3097,7 @@ GameObject:
   - component: {fileID: 339094077}
   - component: {fileID: 339094076}
   - component: {fileID: 339094075}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3539,7 +3539,7 @@ GameObject:
   - component: {fileID: 359840873}
   - component: {fileID: 359840872}
   - component: {fileID: 359840871}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3703,7 +3703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365734178}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13505936, y: -0, z: -0, w: 0.9908375}
+  m_LocalRotation: {x: 0.13505936, y: 9.730069e-23, z: -1.9368466e-23, w: 0.9908375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3818,6 +3818,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &389962684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4116,7 +4127,7 @@ GameObject:
   - component: {fileID: 408168731}
   - component: {fileID: 408168730}
   - component: {fileID: 408168729}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (89)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4221,7 +4232,7 @@ GameObject:
   - component: {fileID: 460735353}
   - component: {fileID: 460735352}
   - component: {fileID: 460735351}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (79)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4326,7 +4337,7 @@ GameObject:
   - component: {fileID: 469030419}
   - component: {fileID: 469030418}
   - component: {fileID: 469030417}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4506,7 +4517,7 @@ GameObject:
   - component: {fileID: 472196703}
   - component: {fileID: 472196702}
   - component: {fileID: 472196701}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (66)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4611,7 +4622,7 @@ GameObject:
   - component: {fileID: 474406911}
   - component: {fileID: 474406910}
   - component: {fileID: 474406909}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5371,7 +5382,7 @@ GameObject:
   - component: {fileID: 548311128}
   - component: {fileID: 548311127}
   - component: {fileID: 548311126}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5569,7 +5580,7 @@ GameObject:
   - component: {fileID: 572795465}
   - component: {fileID: 572795464}
   - component: {fileID: 572795463}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6148,7 +6159,7 @@ GameObject:
   - component: {fileID: 593715640}
   - component: {fileID: 593715639}
   - component: {fileID: 593715638}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6253,7 +6264,7 @@ GameObject:
   - component: {fileID: 635984921}
   - component: {fileID: 635984920}
   - component: {fileID: 635984919}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6358,7 +6369,7 @@ GameObject:
   - component: {fileID: 643964371}
   - component: {fileID: 643964370}
   - component: {fileID: 643964369}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6619,7 +6630,7 @@ GameObject:
   - component: {fileID: 672503151}
   - component: {fileID: 672503150}
   - component: {fileID: 672503149}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6896,6 +6907,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &713697934
 GameObject:
   m_ObjectHideFlags: 0
@@ -6908,7 +6930,7 @@ GameObject:
   - component: {fileID: 713697938}
   - component: {fileID: 713697937}
   - component: {fileID: 713697936}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7013,7 +7035,7 @@ GameObject:
   - component: {fileID: 725778083}
   - component: {fileID: 725778082}
   - component: {fileID: 725778081}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (83)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7118,7 +7140,7 @@ GameObject:
   - component: {fileID: 733804066}
   - component: {fileID: 733804065}
   - component: {fileID: 733804064}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7223,7 +7245,7 @@ GameObject:
   - component: {fileID: 738709199}
   - component: {fileID: 738709198}
   - component: {fileID: 738709197}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (86)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7328,7 +7350,7 @@ GameObject:
   - component: {fileID: 762445987}
   - component: {fileID: 762445986}
   - component: {fileID: 762445985}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7430,7 +7452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762562102}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7470,7 +7492,7 @@ GameObject:
   - component: {fileID: 775226261}
   - component: {fileID: 775226260}
   - component: {fileID: 775226259}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (91)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7802,7 +7824,7 @@ GameObject:
   - component: {fileID: 816328363}
   - component: {fileID: 816328364}
   - component: {fileID: 816328365}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7898,6 +7920,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &822025123
 GameObject:
   m_ObjectHideFlags: 0
@@ -7910,7 +7943,7 @@ GameObject:
   - component: {fileID: 822025127}
   - component: {fileID: 822025126}
   - component: {fileID: 822025125}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8149,7 +8182,7 @@ GameObject:
   - component: {fileID: 844526475}
   - component: {fileID: 844526474}
   - component: {fileID: 844526473}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (69)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8431,7 +8464,7 @@ GameObject:
   - component: {fileID: 852990953}
   - component: {fileID: 852990952}
   - component: {fileID: 852990954}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Water (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8534,7 +8567,7 @@ GameObject:
   - component: {fileID: 853310340}
   - component: {fileID: 853310339}
   - component: {fileID: 853310338}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (77)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8775,7 +8808,7 @@ GameObject:
   - component: {fileID: 865807036}
   - component: {fileID: 865807035}
   - component: {fileID: 865807037}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8878,7 +8911,7 @@ GameObject:
   - component: {fileID: 866574015}
   - component: {fileID: 866574014}
   - component: {fileID: 866574013}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9058,7 +9091,7 @@ GameObject:
   - component: {fileID: 879911253}
   - component: {fileID: 879911252}
   - component: {fileID: 879911251}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9321,7 +9354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11701419, y: -0.00000000854409, z: 0.0000000010066955, w: 0.99313027}
+  m_LocalRotation: {x: 0.11701419, y: 0.000000008538134, z: -0.0000000010059936, w: 0.99313027}
   m_LocalPosition: {x: 0.2, y: -16.38, z: -140.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9529,7 +9562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964289214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.117014185, y: -0.000000004272045, z: 5.0334775e-10, w: 0.99313027}
+  m_LocalRotation: {x: 0.117014185, y: 0.000000004260119, z: -5.019425e-10, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9737,6 +9770,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &1009506120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9942,7 +9986,7 @@ GameObject:
   - component: {fileID: 1022401123}
   - component: {fileID: 1022401122}
   - component: {fileID: 1022401121}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10087,6 +10131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Den
       objectReference: {fileID: 0}
+    - target: {fileID: 5854512481821609963, guid: 6719e2543fcf7c640850d3fef5c1504e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10104,7 +10152,7 @@ GameObject:
   - component: {fileID: 1047759845}
   - component: {fileID: 1047759844}
   - component: {fileID: 1047759843}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10337,7 +10385,7 @@ GameObject:
   - component: {fileID: 1068298786}
   - component: {fileID: 1068298785}
   - component: {fileID: 1068298784}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10710,7 +10758,7 @@ GameObject:
   - component: {fileID: 1106350821}
   - component: {fileID: 1106350820}
   - component: {fileID: 1106350819}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10815,7 +10863,7 @@ GameObject:
   - component: {fileID: 1116937567}
   - component: {fileID: 1116937566}
   - component: {fileID: 1116937565}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10917,7 +10965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1118454755}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: --PARENT--Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11127,6 +11175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1167416719
 GameObject:
   m_ObjectHideFlags: 0
@@ -11638,7 +11697,7 @@ GameObject:
   - component: {fileID: 1202604730}
   - component: {fileID: 1202604729}
   - component: {fileID: 1202604728}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11815,7 +11874,7 @@ GameObject:
   - component: {fileID: 1211048651}
   - component: {fileID: 1211048650}
   - component: {fileID: 1211048649}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11920,7 +11979,7 @@ GameObject:
   - component: {fileID: 1212864091}
   - component: {fileID: 1212864090}
   - component: {fileID: 1212864089}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12576,7 +12635,7 @@ GameObject:
   - component: {fileID: 1236995576}
   - component: {fileID: 1236995575}
   - component: {fileID: 1236995574}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12881,7 +12940,7 @@ GameObject:
   - component: {fileID: 1255664339}
   - component: {fileID: 1255664338}
   - component: {fileID: 1255664337}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (88)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12986,7 +13045,7 @@ GameObject:
   - component: {fileID: 1279682677}
   - component: {fileID: 1279682676}
   - component: {fileID: 1279682675}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13221,7 +13280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1306237836}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: --PARENT--Cave Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13387,7 +13446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315480771}
   - component: {fileID: 1315480772}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sorter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13545,7 +13604,7 @@ GameObject:
   - component: {fileID: 1324256174}
   - component: {fileID: 1324256173}
   - component: {fileID: 1324256172}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13886,7 +13945,7 @@ GameObject:
   - component: {fileID: 1344385929}
   - component: {fileID: 1344385928}
   - component: {fileID: 1344385927}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14036,7 +14095,7 @@ GameObject:
   - component: {fileID: 1349646967}
   - component: {fileID: 1349646966}
   - component: {fileID: 1349646965}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (82)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14141,7 +14200,7 @@ GameObject:
   - component: {fileID: 1356165586}
   - component: {fileID: 1356165585}
   - component: {fileID: 1356165584}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Den (1)
   m_TagString: Den
   m_Icon: {fileID: 0}
@@ -14248,7 +14307,7 @@ GameObject:
   - component: {fileID: 1436115776}
   - component: {fileID: 1436115775}
   - component: {fileID: 1436115774}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (73)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14353,7 +14412,7 @@ GameObject:
   - component: {fileID: 1454940992}
   - component: {fileID: 1454940991}
   - component: {fileID: 1454940990}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14585,7 +14644,7 @@ GameObject:
   - component: {fileID: 1479771083}
   - component: {fileID: 1479771082}
   - component: {fileID: 1479771081}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14893,7 +14952,7 @@ GameObject:
   - component: {fileID: 1494290652}
   - component: {fileID: 1494290651}
   - component: {fileID: 1494290650}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14999,7 +15058,7 @@ GameObject:
   - component: {fileID: 1522103782}
   - component: {fileID: 1522103781}
   - component: {fileID: 1522103780}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15104,7 +15163,7 @@ GameObject:
   - component: {fileID: 1525366264}
   - component: {fileID: 1525366263}
   - component: {fileID: 1525366262}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15206,7 +15265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528082243}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: --PARENT--Medium Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15330,7 +15389,7 @@ GameObject:
   - component: {fileID: 1536461802}
   - component: {fileID: 1536461803}
   - component: {fileID: 1536461804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15426,6 +15485,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1538304951
 GameObject:
   m_ObjectHideFlags: 3
@@ -15565,7 +15635,7 @@ GameObject:
   - component: {fileID: 1545589900}
   - component: {fileID: 1545589899}
   - component: {fileID: 1545589898}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15670,7 +15740,7 @@ GameObject:
   - component: {fileID: 1548363020}
   - component: {fileID: 1548363019}
   - component: {fileID: 1548363018}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15909,7 +15979,7 @@ GameObject:
   - component: {fileID: 1557120528}
   - component: {fileID: 1557120527}
   - component: {fileID: 1557120526}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (65)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16073,7 +16143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562765860}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0989781, y: -0.000000004280473, z: 4.2576367e-10, w: 0.99508965}
+  m_LocalRotation: {x: 0.0989781, y: 0.000000004209496, z: -4.1870385e-10, w: 0.99508965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16186,7 +16256,7 @@ GameObject:
   - component: {fileID: 1572117309}
   - component: {fileID: 1572117308}
   - component: {fileID: 1572117307}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (70)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16291,7 +16361,7 @@ GameObject:
   - component: {fileID: 1588302044}
   - component: {fileID: 1588302043}
   - component: {fileID: 1588302042}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (80)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16675,7 +16745,7 @@ GameObject:
   - component: {fileID: 1621786818}
   - component: {fileID: 1621786817}
   - component: {fileID: 1621786816}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (74)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16780,7 +16850,7 @@ GameObject:
   - component: {fileID: 1632170918}
   - component: {fileID: 1632170917}
   - component: {fileID: 1632170916}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16968,7 +17038,7 @@ GameObject:
   - component: {fileID: 1670418191}
   - component: {fileID: 1670418190}
   - component: {fileID: 1670418189}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17235,7 +17305,7 @@ GameObject:
   - component: {fileID: 1682536380}
   - component: {fileID: 1682536379}
   - component: {fileID: 1682536378}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17468,7 +17538,7 @@ GameObject:
   - component: {fileID: 1687349199}
   - component: {fileID: 1687349198}
   - component: {fileID: 1687349197}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17573,7 +17643,7 @@ GameObject:
   - component: {fileID: 1690875088}
   - component: {fileID: 1690875087}
   - component: {fileID: 1690875086}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17842,7 +17912,7 @@ GameObject:
   - component: {fileID: 1720660652}
   - component: {fileID: 1720660651}
   - component: {fileID: 1720660650}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18150,7 +18220,7 @@ GameObject:
   - component: {fileID: 1754202914}
   - component: {fileID: 1754202913}
   - component: {fileID: 1754202912}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18255,7 +18325,7 @@ GameObject:
   - component: {fileID: 1796187890}
   - component: {fileID: 1796187889}
   - component: {fileID: 1796187888}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (71)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18360,7 +18430,7 @@ GameObject:
   - component: {fileID: 1797002866}
   - component: {fileID: 1797002865}
   - component: {fileID: 1797002864}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (81)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18599,7 +18669,7 @@ GameObject:
   - component: {fileID: 1807277694}
   - component: {fileID: 1807277693}
   - component: {fileID: 1807277692}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (67)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18837,7 +18907,7 @@ GameObject:
   - component: {fileID: 1821985328}
   - component: {fileID: 1821985327}
   - component: {fileID: 1821985326}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18942,7 +19012,7 @@ GameObject:
   - component: {fileID: 1833877444}
   - component: {fileID: 1833877443}
   - component: {fileID: 1833877442}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19208,7 +19278,7 @@ GameObject:
   - component: {fileID: 1844040448}
   - component: {fileID: 1844040447}
   - component: {fileID: 1844040446}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19313,7 +19383,7 @@ GameObject:
   - component: {fileID: 1845406111}
   - component: {fileID: 1845406110}
   - component: {fileID: 1845406109}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19418,7 +19488,7 @@ GameObject:
   - component: {fileID: 1848563038}
   - component: {fileID: 1848563037}
   - component: {fileID: 1848563036}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19598,7 +19668,7 @@ GameObject:
   - component: {fileID: 1856954002}
   - component: {fileID: 1856954001}
   - component: {fileID: 1856954000}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19703,7 +19773,7 @@ GameObject:
   - component: {fileID: 1857041507}
   - component: {fileID: 1857041506}
   - component: {fileID: 1857041505}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19807,7 +19877,7 @@ GameObject:
   - component: {fileID: 1860655748}
   - component: {fileID: 1860655751}
   - component: {fileID: 1860655750}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Water (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19891,7 +19961,7 @@ GameObject:
   - component: {fileID: 1868627903}
   - component: {fileID: 1868627902}
   - component: {fileID: 1868627901}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (72)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20074,7 +20144,7 @@ GameObject:
   - component: {fileID: 1893134183}
   - component: {fileID: 1893134182}
   - component: {fileID: 1893134181}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20623,7 +20693,7 @@ GameObject:
   - component: {fileID: 1927360611}
   - component: {fileID: 1927360610}
   - component: {fileID: 1927360609}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20728,7 +20798,7 @@ GameObject:
   - component: {fileID: 1958879515}
   - component: {fileID: 1958879514}
   - component: {fileID: 1958879513}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (90)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21030,7 +21100,7 @@ GameObject:
   - component: {fileID: 1988589954}
   - component: {fileID: 1988589955}
   - component: {fileID: 1988589956}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21126,6 +21196,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &1999249520
 GameObject:
   m_ObjectHideFlags: 0
@@ -21138,7 +21219,7 @@ GameObject:
   - component: {fileID: 1999249524}
   - component: {fileID: 1999249523}
   - component: {fileID: 1999249522}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21243,7 +21324,7 @@ GameObject:
   - component: {fileID: 2015663329}
   - component: {fileID: 2015663328}
   - component: {fileID: 2015663327}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21441,7 +21522,7 @@ GameObject:
   - component: {fileID: 2032377183}
   - component: {fileID: 2032377182}
   - component: {fileID: 2032377181}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21546,7 +21627,7 @@ GameObject:
   - component: {fileID: 2040654073}
   - component: {fileID: 2040654072}
   - component: {fileID: 2040654071}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21746,6 +21827,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &2078032574
 GameObject:
   m_ObjectHideFlags: 0
@@ -21758,7 +21850,7 @@ GameObject:
   - component: {fileID: 2078032578}
   - component: {fileID: 2078032577}
   - component: {fileID: 2078032576}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (75)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22286,7 +22378,7 @@ GameObject:
   - component: {fileID: 2120607000}
   - component: {fileID: 2120606999}
   - component: {fileID: 2120606998}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Medium Wall (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
