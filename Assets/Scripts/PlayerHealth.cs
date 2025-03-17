@@ -39,8 +39,8 @@ public class PlayerHealth : MonoBehaviour
                 healthDisplayArray[health].gameObject.SetActive(false);
                 //lose health
                 health--;
-                thirdPersonCharacterController.enabled = false;
-                _rb.velocity = new Vector3(0, 10, -20);
+               /// thirdPersonCharacterController.enabled = false;
+                _rb.velocity = new Vector3(0, 10, 0);
                 Debug.Log("Force added");
                 if (isCoroutineActive == false)
                 {
@@ -60,8 +60,8 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator OutOfCombatCoroutine()
     {   
-        yield return new WaitForSeconds(0.3f);
-        thirdPersonCharacterController.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+       /// thirdPersonCharacterController.enabled = true;
         isCoroutineActive = true;
         yield return new WaitForSeconds(5f / thirdPersonCharacterController.healingSpeedMultiplier);
         isCoroutineActive = false;
