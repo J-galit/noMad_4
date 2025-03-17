@@ -1,3 +1,4 @@
+using ParadoxNotion;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,6 +6,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    private Rigidbody _rb;
+
     public int health;
     public int maxHealth;
     private bool isInCombat, isCoroutineActive;
@@ -12,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
     private ThirdPersonCharacterController thirdPersonCharacterController;
     private void Awake()
     {
+        _rb = GetComponent<Rigidbody>();
         //need this script to access newMaxHealth variable
         thirdPersonCharacterController = GetComponent<ThirdPersonCharacterController>();
         isCoroutineActive = false;
@@ -22,10 +26,10 @@ public class PlayerHealth : MonoBehaviour
         HealthCheck(health);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         //if hit by an enemy attack
-        if (collision.gameObject.CompareTag("EnemyAttack"))
+        if (other.gameObject.CompareTag("EnemyAttack"))
         {
 
             if (health > 0)
@@ -35,6 +39,9 @@ public class PlayerHealth : MonoBehaviour
                 healthDisplayArray[health].gameObject.SetActive(false);
                 //lose health
                 health--;
+                thirdPersonCharacterController.enabled = false;
+                _rb.velocity = new Vector3(0, 10, -20);
+                Debug.Log("Force added");
                 if (isCoroutineActive == false)
                 {
                     //start coroutine that will slowly heal the player
@@ -49,8 +56,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+  
+
     IEnumerator OutOfCombatCoroutine()
-    {
+    {   
+        yield return new WaitForSeconds(0.3f);
+        thirdPersonCharacterController.enabled = true;
         isCoroutineActive = true;
         yield return new WaitForSeconds(5f / thirdPersonCharacterController.healingSpeedMultiplier);
         isCoroutineActive = false;

@@ -63,7 +63,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     public LayerMask groundMask; // Define ground layer
     private bool isGrounded;
     [SerializeField] private float jumpForce = 5.0f;
-    [SerializeField] private float gravity = -9.81f;
+    [SerializeField] public float gravity = -9.81f;
     [SerializeField] private float coyoteTimeDuration = 0.2f; // Time window for coyote time
     private float coyoteTimeCounter;       // Timer for coyote time
 
@@ -102,7 +102,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
 
-    private CharacterController characterController;
+    public CharacterController characterController;
     private Camera mainCamera;
     private PlayerInputHandler inputHandler;
 

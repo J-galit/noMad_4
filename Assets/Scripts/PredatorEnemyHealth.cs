@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PredatorEnemyHealth : MonoBehaviour
 {
+    private Rigidbody _rb;
+
     public int health;
     [SerializeField]
     private TextMeshProUGUI _healthText;
@@ -14,6 +16,7 @@ public class PredatorEnemyHealth : MonoBehaviour
     private void Awake()
     {
         isIFramesActive = false;
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,6 +30,7 @@ public class PredatorEnemyHealth : MonoBehaviour
                 //give invincibility
                 isIFramesActive = true;
                 _healthText.text = health.ToString();
+                _rb.AddForce(new Vector3(0, 0, -30), ForceMode.Impulse);
                 StartCoroutine(InvincibilityCoroutine());
                 //dies when health drops to 0 or below
                 if(health <= 0)
