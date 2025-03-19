@@ -198,12 +198,12 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
         if (other.gameObject.tag == "Currency")
         {
+            Destroy(other.gameObject);
             totalCurrency += 100;
             Debug.Log(totalCurrency);
             _UICurrency.UpdateCurrency(totalCurrency);
             _bugSpawner.CurrencyCheck(totalCurrency);
             coinGetPlayer.Play();
-            Destroy(other.gameObject);
         }
     }
 
