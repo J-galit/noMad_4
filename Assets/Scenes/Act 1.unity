@@ -5570,6 +5570,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4830318507864206301, guid: 9147b4db56eb22443b5256edfb3bad93, type: 3}
   m_PrefabInstance: {fileID: 670123165}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &672530586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4355900181695348487, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
+  m_PrefabInstance: {fileID: 4722513669192562386}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &672530588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672530586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &673060317
 GameObject:
   m_ObjectHideFlags: 0
@@ -6110,7 +6138,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4355900181695348487, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2106405590}
   m_SourcePrefab: {fileID: 100100000, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
 --- !u!1 &758213296
 GameObject:
@@ -6176,7 +6207,7 @@ Terrain:
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -6197,12 +6228,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758213296}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -400, y: -214.52605, z: 0}
+  m_LocalScale: {x: 0.6565449, y: 0.6565449, z: 0.6565449}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1250809615}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &772073113
 PrefabInstance:
@@ -11547,6 +11578,7 @@ RectTransform:
   - {fileID: 1799965272}
   - {fileID: 789972685}
   - {fileID: 1215784969}
+  - {fileID: 758213299}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -19053,6 +19085,34 @@ Transform:
   - {fileID: 345511643}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2106405588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4355900181695348487, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
+  m_PrefabInstance: {fileID: 755569967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2106405590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106405588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1001 &2107501803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19638,7 +19698,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4355900181695348487, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 672530588}
   m_SourcePrefab: {fileID: 100100000, guid: b2e62068d9accea499ca5204f65df83a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -19652,7 +19715,6 @@ SceneRoots:
   - {fileID: 2103355248}
   - {fileID: 1250809615}
   - {fileID: 1874878936}
-  - {fileID: 758213299}
   - {fileID: 341296701}
   - {fileID: 4722513669192562386}
   - {fileID: 2062076486}
