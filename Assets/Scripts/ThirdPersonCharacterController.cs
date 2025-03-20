@@ -205,6 +205,12 @@ public class ThirdPersonCharacterController : MonoBehaviour
             _bugSpawner.CurrencyCheck(totalCurrency);
             coinGetPlayer.Play();
         }
+
+        if(other.gameObject.tag == "SectionCheck")
+        {
+            _bugSpawner._sectionCheck+= 1;
+            Destroy(other.gameObject);
+        }
     }
 
     private void OnTriggerExit(Collider other)
