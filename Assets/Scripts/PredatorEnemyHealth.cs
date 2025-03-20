@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PredatorEnemyHealth : MonoBehaviour
 {
+    private Rigidbody _rb;
+
     public int health;
-    [SerializeField] GameObject[] healthDisplayArray;
+    [SerializeField]
+    private TextMeshProUGUI _healthText;
 
     private bool isIFramesActive;
 
     private void Awake()
     {
         isIFramesActive = false;
+        _rb = GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,12 +25,12 @@ public class PredatorEnemyHealth : MonoBehaviour
         {
             if(health > 0 && isIFramesActive == false)
             {
-                //remove a health signifier
-                healthDisplayArray[health-1].gameObject.SetActive(false);
                 //lose health
                 health--;
                 //give invincibility
                 isIFramesActive = true;
+                _healthText.text = health.ToString();
+                _rb.AddForce(new Vector3(0, 0, -75), ForceMode.Impulse);
                 StartCoroutine(InvincibilityCoroutine());
                 //dies when health drops to 0 or below
                 if(health <= 0)
