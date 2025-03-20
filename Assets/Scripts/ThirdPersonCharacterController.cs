@@ -11,6 +11,7 @@ using UnityEngine.UIElements;
 public class ThirdPersonCharacterController : MonoBehaviour
 {
     private PlayerHealth playerHealth;
+    private BugSpawner _bugSpawner;
 
     [SerializeField] private GameObject adaptationsShop;
     [SerializeField] private GameObject jumpBoostButton;
@@ -62,7 +63,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     public LayerMask groundMask; // Define ground layer
     private bool isGrounded;
     [SerializeField] private float jumpForce = 5.0f;
-    [SerializeField] private float gravity = -9.81f;
+    [SerializeField] public float gravity = -9.81f;
     [SerializeField] private float coyoteTimeDuration = 0.2f; // Time window for coyote time
     private float coyoteTimeCounter;       // Timer for coyote time
 
@@ -101,7 +102,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
 
-    private CharacterController characterController;
+    public CharacterController characterController;
     private Camera mainCamera;
     private PlayerInputHandler inputHandler;
 
@@ -116,6 +117,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     private void Awake()
     {
         playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
+        _bugSpawner = GameObject.Find("BugSpawner").GetComponent<BugSpawner>();
 
         attackSpeedMultiplier = 1;
         healingSpeedMultiplier = 1;
@@ -196,11 +198,12 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
         if (other.gameObject.tag == "Currency")
         {
+            Destroy(other.gameObject);
             totalCurrency += 100;
             Debug.Log(totalCurrency);
             _UICurrency.UpdateCurrency(totalCurrency);
+            _bugSpawner.CurrencyCheck(totalCurrency);
             coinGetPlayer.Play();
-            Destroy(other.gameObject);
         }
     }
 
@@ -386,6 +389,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine()); //start error coroutine
         }
         _UICurrency.UpdateCurrency(totalCurrency); //updates the currency in the UI
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -418,6 +422,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -455,7 +460,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
-
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -493,7 +498,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
-
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -531,6 +536,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -568,6 +574,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
+        _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
 
@@ -602,6 +609,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
+        _bugSpawner.CurrencyCheck(totalCurrency);
+
     }
 
     public void FasterAttackButtonHandler()
@@ -635,6 +644,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             StartCoroutine(MaxAdaptationCoroutine());
         }
         _UICurrency.UpdateCurrency(totalCurrency);
+        _bugSpawner.CurrencyCheck(totalCurrency);
+
     }
 
     IEnumerator MaxAdaptationCoroutine()
