@@ -215,6 +215,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         {
             lastCheckpoint = transform.position;
             _bugSpawner._sectionCheck+= 1;
+            _bugSpawner.FogActivation();
             Destroy(other.gameObject);
         }
     }

@@ -10,6 +10,8 @@ public class BugSpawner : MonoBehaviour
 
     [SerializeField]
     private GameObject _spawnPoint1, _spawnPoint2, _spawnPoint3, _spawnPoint4;
+    [SerializeField]
+    private GameObject _fogPoint1, _fogPoint2;
     public int _sectionCheck;
     private bool _isOnSecondPoint;
 
@@ -34,6 +36,7 @@ public class BugSpawner : MonoBehaviour
     {
         Debug.Log("Section check " + _sectionCheck);
 
+        //Bug spawns
         if(_sectionCheck == 0 && _isOnSecondPoint == false)
         {
             transform.position = _spawnPoint2.transform.position;
@@ -54,6 +57,15 @@ public class BugSpawner : MonoBehaviour
         {
             transform.position = _spawnPoint3.transform.position;
             _isOnSecondPoint = false;
+        }
+    }
+
+    public void FogActivation()
+    {
+        //Fog activations
+        if (_sectionCheck == 1)
+        {
+            _fogPoint1.SetActive(true);
         }
     }
 }
