@@ -40,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
                 //lose health
                 health--;
                /// thirdPersonCharacterController.enabled = false;
-                _rb.velocity = new Vector3(0, 10, 0);
+                //_rb.velocity = new Vector3(0, 10, 0);
                 Debug.Log("Force added");
                 if (isCoroutineActive == false)
                 {
@@ -51,7 +51,9 @@ public class PlayerHealth : MonoBehaviour
             else if (health <= 0) //if player dies
             {
                 //restart scene 
-                Destroy(gameObject);
+                
+                thirdPersonCharacterController.Respawn();
+                //Destroy(gameObject);
             }
         }
     }
