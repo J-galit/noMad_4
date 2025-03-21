@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     public int health;
     public int maxHealth;
-    private bool isInCombat, isCoroutineActive;
+    private bool isInCombat, isCoroutineActive, isInFog;
     [SerializeField] GameObject[] healthDisplayArray;
     private ThirdPersonCharacterController thirdPersonCharacterController;
     private void Awake()
@@ -50,15 +50,50 @@ public class PlayerHealth : MonoBehaviour
             }
             else if (health <= 0) //if player dies
             {
-                //restart scene 
-                
+                isInFog = false;
                 thirdPersonCharacterController.Respawn();
-                //Destroy(gameObject);
+                HealthCheck(0);
             }
+        }
+
+        if (other.gameObject.CompareTag("Fog"))
+        {
+            isInFog = true;
+            StartCoroutine(FogCoroutine());
         }
     }
 
-  
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Fog"))
+        {
+            isInFog = false;
+        }
+    }
+
+    private IEnumerator FogCoroutine()
+    {
+        yield return new WaitForSeconds(2);
+        if (isInFog == true)
+        {
+            healthDisplayArray[health].gameObject.SetActive(false);
+            health--;
+            if (health < 0)
+            {
+                thirdPersonCharacterController.Respawn();
+                HealthCheck(0);
+            }
+            else
+            {
+                StartCoroutine(FogCoroutine());
+            }
+        }
+        else
+        {
+            StartCoroutine(OutOfCombatCoroutine());
+        }
+        
+    }
 
     IEnumerator OutOfCombatCoroutine()
     {   
@@ -69,7 +104,7 @@ public class PlayerHealth : MonoBehaviour
         isCoroutineActive = false;
         isInCombat = false;
         //checks if the player is out of combat
-        if (isInCombat == false)
+        if (isInCombat == false && isInFog == false)
         {
             //if health is less than max
             if (health < maxHealth)

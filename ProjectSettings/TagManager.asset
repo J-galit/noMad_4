@@ -9,6 +9,7 @@ TagManager:
   - Attack
   - EnemyAttack
   - SectionCheck
+  - Fog
   layers:
   - Default
   - TransparentFX
