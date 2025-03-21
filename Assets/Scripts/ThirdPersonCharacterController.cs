@@ -206,7 +206,6 @@ public class ThirdPersonCharacterController : MonoBehaviour
         {
             Destroy(other.gameObject);
             totalCurrency += 100;
-            Debug.Log(totalCurrency);
             _UICurrency.UpdateCurrency(totalCurrency);
             _bugSpawner.CurrencyCheck(totalCurrency);
             coinGetPlayer.Play();
@@ -214,6 +213,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
         if(other.gameObject.tag == "SectionCheck")
         {
+            lastCheckpoint = transform.position;
             _bugSpawner._sectionCheck+= 1;
             Destroy(other.gameObject);
         }
@@ -228,6 +228,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             isAbleToShop = true;
             lastCheckpoint = transform.position;
         }
+
     }
 
 
