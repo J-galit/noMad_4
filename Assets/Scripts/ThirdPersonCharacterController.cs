@@ -48,6 +48,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
     private int fasterAttackCost = 100;
     private bool isFasterAttackOwned;
 
+    [Header("Respawn Parameters")]
+    private Vector3 lastCheckpoint;
 
     [Header("Movement Speeds")]
     [SerializeField] private float walkSpeed = 3.0f;
@@ -133,6 +135,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
         attackPrefab.transform.localScale = attackPrefab.transform.localScale;
 
         inputHandler = PlayerInputHandler.Instance;
+
+        
+        lastCheckpoint = transform.position;
+        print(lastCheckpoint);
 
         // Check if groundMask is not set
         if (groundMask == 0)
@@ -220,6 +226,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             isInDen = false;
             adaptationsShop.SetActive(false);
             isAbleToShop = true;
+            lastCheckpoint = transform.position;
         }
     }
 
@@ -661,4 +668,22 @@ public class ThirdPersonCharacterController : MonoBehaviour
         maxAdaptationErrorUI.SetActive(false); //turn of error message
 
     }
+
+    public void Respawn()
+    {
+        StartCoroutine(RespawnCoroutine());
+    }
+
+    IEnumerator RespawnCoroutine()
+    {
+        characterController.enabled = false; // Disable to prevent movement errors
+        yield return new WaitForEndOfFrame(); // Wait for a frame to let physics settle
+
+        transform.position = lastCheckpoint; // Move character to respawn point
+        yield return new WaitForEndOfFrame(); // Allow Unity to register the new position
+
+        characterController.enabled = true; // Re-enable controller
+    }
+
+
 }
