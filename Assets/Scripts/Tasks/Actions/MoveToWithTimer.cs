@@ -14,6 +14,7 @@ public class MoveToWithTimer : ActionTask
     public BBParameter<float> speedBoostDistance;
     public BBParameter<float> boostedMoveSpeed;
     public BBParameter<float> stopDistance;
+    public BBParameter<float> timer;
     public float timePassed;
 
     protected override void OnExecute()
@@ -49,7 +50,7 @@ public class MoveToWithTimer : ActionTask
         }
 
         timePassed += Time.deltaTime;
-        if (timePassed > 1.3)
+        if (timePassed > timer.value)
         {
             EndAction(true);
         }

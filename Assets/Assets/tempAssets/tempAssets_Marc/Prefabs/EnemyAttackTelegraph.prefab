@@ -179,7 +179,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3570986888440342907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -247,5 +247,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ae7180efda0df46b2f2517507da4cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyAttack: {fileID: 719366698053161682, guid: 9dcdba4c215c1c64ea394a5b90b7e7a9, type: 3}
+  enemyAttack: {fileID: 1472723101393920221, guid: e61a1a51e01c2b04e9a38bff725b8bd9, type: 3}
   enemyTelegraphSound: {fileID: 5813376735118973814}

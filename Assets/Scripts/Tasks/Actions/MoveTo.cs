@@ -45,9 +45,5 @@ public class MoveTo : ActionTask
         {
             EndAction(true);
         }
-        else
-        {
-            Debug.Log("Distance: " + Vector3.Distance(agent.transform.position, location.value.position));
-        }
     }
 }
