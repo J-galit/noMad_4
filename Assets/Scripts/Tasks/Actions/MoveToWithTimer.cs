@@ -26,8 +26,8 @@ public class MoveToWithTimer : ActionTask
 
     protected override void OnUpdate()
     {
-        
 
+        ////ENEMY MOVES HERE *BUT* THIS IS ALSO USED TO ATTACK THE PLAYER
         Vector3 direction = SteeringUtility.Seek(agent.transform.position, location.value.position);
         agent.transform.Translate(moveSpeed * Time.deltaTime * direction, Space.World);
 

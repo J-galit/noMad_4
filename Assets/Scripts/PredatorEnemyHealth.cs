@@ -8,6 +8,7 @@ public class PredatorEnemyHealth : MonoBehaviour
     private Rigidbody _rb;
 
     public int health;
+    private bool isInFog;
     [SerializeField]
     private TextMeshProUGUI _healthText;
 
@@ -35,14 +36,45 @@ public class PredatorEnemyHealth : MonoBehaviour
                 //dies when health drops to 0 or below
                 if(health <= 0)
                 {
-                    Destroy(gameObject);
+                    StartCoroutine(DeathCoroutine());
                 }
             }
             else if(health <= 0)
             {
-                Destroy(gameObject);
+                StartCoroutine(DeathCoroutine());
             }
         }
+
+        if (other.CompareTag("Fog"))
+        {
+            isInFog = true;
+            StartCoroutine(FogCoroutine());
+        }
+    }
+    private IEnumerator FogCoroutine()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (isInFog == true)
+        {
+            health--;
+            _healthText.text = health.ToString();
+            if (health <= 0)
+            {
+                transform.localRotation = Quaternion.Euler(0, 0, -90);
+                StartCoroutine(DeathCoroutine());
+            }
+            else
+            {
+                StartCoroutine(FogCoroutine());
+            }
+        }
+    }
+
+    private IEnumerator DeathCoroutine()
+    {
+        transform.localRotation = Quaternion.Euler(0, 0, -90);
+        yield return new WaitForSeconds(0.2f);
+        Destroy(gameObject);
     }
 
     IEnumerator InvincibilityCoroutine()

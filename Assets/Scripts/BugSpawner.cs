@@ -67,5 +67,10 @@ public class BugSpawner : MonoBehaviour
         {
             _fogPoint1.SetActive(true);
         }
+        if (_sectionCheck == 2)
+        {
+            _fogPoint1.SetActive(false);
+            _fogPoint2.SetActive(true);
+        }
     }
 }

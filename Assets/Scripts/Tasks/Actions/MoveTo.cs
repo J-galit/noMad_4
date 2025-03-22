@@ -20,6 +20,8 @@ public class MoveTo : ActionTask
 
     protected override void OnUpdate()
     {
+
+        ////ENEMY MOVES HERE
         Vector3 direction = SteeringUtility.Seek(agent.transform.position, location.value.position);
         agent.transform.Translate(moveSpeed * Time.deltaTime * direction, Space.World);
 

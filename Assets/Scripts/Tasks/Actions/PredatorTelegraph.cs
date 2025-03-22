@@ -21,7 +21,7 @@ public class PredatorTelegraph : ActionTask
 
     protected override void OnUpdate()
     {
-
+        ////ENEMY CHARGES UP HERE
 
         Vector3 direction = SteeringUtility.Flee(agent.transform.position, location.value.position);
         agent.transform.Translate(moveSpeed * Time.deltaTime * direction, Space.World);

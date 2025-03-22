@@ -183,6 +183,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+            ////WALKING HAPPENS HERE
             //makes player move
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
         }
@@ -252,6 +254,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             //checks if player pressed jump
             if (inputHandler.JumpTriggered)
             {
+            ////JUMP HAPPENS HERE
                 print("Jumping");
                 if (isJumpBoostActive == true)
                 {
@@ -285,6 +288,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
         //checks if player is already attacking or not
         if (isAttacking == false)
         {
+            ////ATTACK HAPPENS HERE
+
             //attack is instantiated
             Instantiate(attackPrefab, transform);
             isAttacking = true; //set to true to prevent multiple attacks at once
