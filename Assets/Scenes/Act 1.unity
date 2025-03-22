@@ -1298,7 +1298,7 @@ PrefabInstance:
         Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
-        Distance":{"_value":2.9,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        Distance":{"_value":4.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
@@ -3117,7 +3117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365734178}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13628678, y: 0.000000008522919, z: -0.0000000011725013, w: 0.9906694}
+  m_LocalRotation: {x: 0.1362868, y: -0.0000000085229175, z: 0.0000000011725012, w: 0.9906694}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8351,7 +8351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11824448, y: -0.000000035223014, z: 0.0000000041943524, w: 0.99298453}
+  m_LocalRotation: {x: 0.11824448, y: 0.000000035223014, z: -0.0000000041943524, w: 0.99298453}
   m_LocalPosition: {x: 18, y: 3.3461373, z: 3.0686197}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8559,7 +8559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964289214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11824447, y: -0.00000001761151, z: 0.0000000020971762, w: 0.99298453}
+  m_LocalRotation: {x: 0.11824447, y: 0.000000017611502, z: -0.0000000020971753, w: 0.99298453}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13595,7 +13595,7 @@ PrefabInstance:
         Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
-        Distance":{"_value":2.9,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        Distance":{"_value":4.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
@@ -13709,7 +13709,7 @@ PrefabInstance:
         Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
-        Distance":{"_value":2.9,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        Distance":{"_value":4.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
@@ -14805,7 +14805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562765860}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10021082, y: -0.000000017646329, z: 0.0000000017772999, w: 0.99496627}
+  m_LocalRotation: {x: 0.10021082, y: 0.000000017646647, z: -0.0000000017773317, w: 0.99496627}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19823,7 +19823,7 @@ PrefabInstance:
         Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
-        Distance":{"_value":2.9,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        Distance":{"_value":4.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
