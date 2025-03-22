@@ -8,6 +8,8 @@ TagManager:
   - Currency
   - Attack
   - EnemyAttack
+  - SectionCheck
+  - Fog
   layers:
   - Default
   - TransparentFX
