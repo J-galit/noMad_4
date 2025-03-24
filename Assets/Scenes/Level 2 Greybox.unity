@@ -605,6 +605,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"Move Speed":{"_value":4.0,"_name":"Move Speed","_id":"dab05cef-76bc-4961-95df-2942f011ea80","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Turn
+        Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
+        Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[2]
+      value: 
+      objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._json
+      value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
     - target: {fileID: 7385608196773035747, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: m_Name
       value: Predator
@@ -1278,6 +1315,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"Move Speed":{"_value":4.0,"_name":"Move Speed","_id":"dab05cef-76bc-4961-95df-2942f011ea80","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Turn
+        Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
+        Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[2]
+      value: 
+      objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._json
+      value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
     - target: {fileID: 7385608196773035747, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: m_Name
       value: Predator (1)
@@ -2471,7 +2545,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323923093}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09897817, y: -0.000000008572449, z: 8.5267227e-10, w: 0.99508965}
+  m_LocalRotation: {x: 0.09897817, y: -0.000000008560947, z: 8.5152807e-10, w: 0.99508965}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9275,6 +9349,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedBlackboard
+      value: '{"_variables":{"Move Speed":{"_value":4.0,"_name":"Move Speed","_id":"dab05cef-76bc-4961-95df-2942f011ea80","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Turn
+        Speed":{"_value":90.0,"_name":"Turn Speed","_id":"cf7a091d-a0e2-4710-8158-9e590c344e9f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Player":{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Stop
+        Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[2]
+      value: 
+      objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._json
+      value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _serializedVariables.Array.data[2]._references.Array.data[1]
+      value: 
+      objectReference: {fileID: 1537916749}
     - target: {fileID: 7385608196773035747, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: m_Name
       value: Predator (2)
@@ -10875,7 +10986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665543790}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.117014244, y: 0.00000003417645, z: -0.0000000040267945, w: 0.99313027}
+  m_LocalRotation: {x: 0.117014244, y: 0.00000003417636, z: -0.000000004026784, w: 0.99313027}
   m_LocalPosition: {x: 31.5, y: 6.43, z: -130.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11350,7 +11461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770335750}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11701424, y: 0.000000017088361, z: -0.000000002013413, w: 0.99313027}
+  m_LocalRotation: {x: 0.11701424, y: 0.00000001708818, z: -0.000000002013392, w: 0.99313027}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11637,7 +11748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829153443}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13505942, y: -8.719026e-16, z: 1.7869098e-17, w: 0.9908375}
+  m_LocalRotation: {x: 0.1350594, y: 0.00000001476463, z: -0.0000000020125421, w: 0.9908375}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
