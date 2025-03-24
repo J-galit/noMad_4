@@ -162,14 +162,14 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
 
         float speed = walkSpeed;
-        if (isSpeedBoostActive)
+        if (isShopping == true)
+        {
+            speed = 0;
+        }
+        else if (isSpeedBoostActive)
         {
             //makes player faster
             speed = walkSpeed * speedBoostMultiplier;
-        }
-        else if (isShopping == true)
-        {
-            speed = 0;
         }
         else
             speed = walkSpeed;
