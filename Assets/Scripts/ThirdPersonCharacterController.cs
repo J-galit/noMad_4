@@ -16,6 +16,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     private TrailRenderer _speedTrail;
 
+    //Setup variables for slots. Have bools as well
+
     [SerializeField] private GameObject adaptationsShop;
     [SerializeField] private GameObject jumpBoostButton;
     [SerializeField] private GameObject speedBoostButton;
@@ -437,6 +439,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             {
                 isSpeedBoostActive = true;
                 speedBoostButton.SetActive(true);
+                //speedBoostButton.transform.position = new Vector3(0, 0, 0);
                 currentAdaptations++;
             }
             else if (isSpeedBoostActive == true)
