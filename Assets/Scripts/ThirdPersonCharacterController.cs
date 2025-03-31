@@ -202,11 +202,13 @@ public class ThirdPersonCharacterController : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
             ////WALKING HAPPENS HERE
+            animator.SetBool("isMoving", true);
             //makes player move
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
 
             
         }
+        else animator.SetBool("isMoving", false);
 
         //calls attack method
         if (inputHandler.AttackTriggered)
