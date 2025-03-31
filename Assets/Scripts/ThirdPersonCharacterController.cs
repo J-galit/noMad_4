@@ -134,6 +134,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         mainCamera = Camera.main;
         
         UnityEngine.Cursor.visible = false;
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         _UICurrency = GameObject.Find("CurrencyText").GetComponent<UICurrency>();
     }
 
@@ -332,7 +333,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             if (adaptationsShop.activeSelf == false && isAbleToShop == true)
             {
                 UnityEngine.Cursor.visible = true;
-                
+                UnityEngine.Cursor.lockState = CursorLockMode.Confined;
+
                 //stops players from moving in the den
                 isShopping = true;
                 
@@ -344,6 +346,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             else if (adaptationsShop.activeSelf == true && isAbleToShop == false)
             {
                 UnityEngine.Cursor.visible = false;
+                UnityEngine.Cursor.lockState = CursorLockMode.Locked;
                 adaptationsShop.SetActive(false);
                 
                 //Allows players to move again while in the den
