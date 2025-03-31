@@ -11,6 +11,6 @@ public class UICurrency : MonoBehaviour
     public void UpdateCurrency(int currency)
     {
         //displays the currency variable
-        currencyText.text = currency.ToString() + " $";
+        currencyText.text = currency.ToString();
     }
 }
