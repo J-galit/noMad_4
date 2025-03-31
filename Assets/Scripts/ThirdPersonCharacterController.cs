@@ -121,6 +121,9 @@ public class ThirdPersonCharacterController : MonoBehaviour
     public AudioSource enemyTakeDamagePlayer;
     public AudioSource jumpPlayer;
     public AudioSource highJumpPlayer;
+
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
     private void Awake()
     {
         playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
@@ -199,6 +202,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             ////WALKING HAPPENS HERE
             //makes player move
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
+
+            
         }
 
         //calls attack method
@@ -301,6 +306,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         if (isAttacking == false)
         {
             ////ATTACK HAPPENS HERE
+            animator.SetTrigger("swipe");
 
             //attack is instantiated
             Instantiate(attackPrefab, transform);
