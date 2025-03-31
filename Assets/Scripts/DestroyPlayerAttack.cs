@@ -4,8 +4,24 @@ using UnityEngine;
 
 public class DestroyPlayerAttack : MonoBehaviour
 {
+    private ThirdPersonCharacterController thirdPersonCharacterController;
+    [SerializeField] private GameObject _newAttack;
+
+    private void Awake()
+    {
+        thirdPersonCharacterController = GameObject.Find("Player").GetComponent<ThirdPersonCharacterController>();
+    }
+
     void Start()
     {
+        if(thirdPersonCharacterController.isLargerAttackActive == true)
+        {
+            _newAttack.SetActive(true);
+        }
+        else
+        {
+            _newAttack.SetActive(false);
+        }
         StartCoroutine(DestroyCoroutine());
     }
 

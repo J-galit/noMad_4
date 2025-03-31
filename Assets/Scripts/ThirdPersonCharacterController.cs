@@ -13,6 +13,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
     private PlayerHealth playerHealth;
     private BugSpawner _bugSpawner;
 
+    private TrailRenderer _speedTrail;
+
     [SerializeField] private GameObject adaptationsShop;
     [SerializeField] private GameObject jumpBoostButton;
     [SerializeField] private GameObject speedBoostButton;
@@ -85,7 +87,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     [Header("Attack Adaptation Parameters")]
     [SerializeField] private float attackSizeMultiplier;
-    [SerializeField] private bool isLargerAttackActive;
+    [SerializeField] public bool isLargerAttackActive;
     [SerializeField] private float attackSpeedMultiplier;
     [SerializeField] private bool isFasterAttackActive;
 
@@ -121,6 +123,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
         playerHealth = GameObject.Find("Player").GetComponent<PlayerHealth>();
         _bugSpawner = GameObject.Find("BugSpawner").GetComponent<BugSpawner>();
 
+        _speedTrail = GetComponent<TrailRenderer>();
+
         attackSpeedMultiplier = 1;
         healingSpeedMultiplier = 1;
         characterController = GetComponent<CharacterController>();
@@ -132,6 +136,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     private void Start()
     {
+        _speedTrail.enabled = false;
         attackPrefab.transform.localScale = attackPrefab.transform.localScale;
 
         inputHandler = PlayerInputHandler.Instance;
@@ -170,9 +175,14 @@ public class ThirdPersonCharacterController : MonoBehaviour
         {
             //makes player faster
             speed = walkSpeed * speedBoostMultiplier;
+            _speedTrail.enabled = true;
+
         }
         else
+        {
             speed = walkSpeed;
+            _speedTrail.enabled = false;
+        }
 
         Vector3 inputDirection = new Vector3(inputHandler.MoveInput.x, 0f, inputHandler.MoveInput.y).normalized; //MoveInput.y because it's a vector 2 so the y is actually the z
 
