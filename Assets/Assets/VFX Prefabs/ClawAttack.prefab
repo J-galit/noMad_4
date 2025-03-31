@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _newAttack: {fileID: 1497336121885502072}
+  _fastAttack: {fileID: 0}
 --- !u!65 &2110125503912670310
 BoxCollider:
   m_ObjectHideFlags: 0
