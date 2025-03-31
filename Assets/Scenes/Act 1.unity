@@ -1943,7 +1943,7 @@ MonoBehaviour:
   smallSizeMultiplier: 0.5
   isLargerSizeActive: 0
   largeSizeMultiplier: 1.5
-  totalCurrency: 100000
+  totalCurrency: 0
   isInDen: 1
   cam: {fileID: 963194228}
   turnSmoothTime: 0.01
@@ -9346,8 +9346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 297.23193, y: 175.927}
-  m_SizeDelta: {x: 151.1763, y: 50}
+  m_AnchoredPosition: {x: 282.54474, y: 175.927}
+  m_SizeDelta: {x: 121.802, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &789972686
 MonoBehaviour:
@@ -9369,7 +9369,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Currency
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
