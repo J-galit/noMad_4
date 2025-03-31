@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 
 //this script is gonna be so fucking long
@@ -89,7 +90,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private float attackSizeMultiplier;
     [SerializeField] public bool isLargerAttackActive;
     [SerializeField] private float attackSpeedMultiplier;
-    [SerializeField] private bool isFasterAttackActive;
+    [SerializeField] public bool isFasterAttackActive;
 
     [Header("Misc. Adaptations")]
     [SerializeField] private bool isSmallerSizeActive;
