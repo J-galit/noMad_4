@@ -162,6 +162,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics.Raycast(transform.position, Vector3.down, groundDistance, groundMask);
+        animator.SetBool("isGrounded", isGrounded);
         HandleCamera();
         HandleMovement();
         HandleShopping();
@@ -264,6 +265,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         }
         else
         {
+            animator.SetBool("jumpRequested", false);
             coyoteTimeCounter -= Time.deltaTime; // Decrease timer if not grounded
         }
 
@@ -277,6 +279,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
             {
             ////JUMP HAPPENS HERE
                 print("Jumping");
+                animator.SetBool("jumpRequested", true);
+                animator.SetBool("isFalling", false);
                 if (isJumpBoostActive == true)
                 {
                     //makes player jump higher
@@ -296,6 +300,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         else
         {
             //gravity 
+            animator.SetBool("isFalling", true);
             currentVelocity.y -= gravity * Time.deltaTime;
         }
 
@@ -310,7 +315,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         if (isAttacking == false)
         {
             ////ATTACK HAPPENS HERE
-            animator.SetTrigger("swipe");
+            animator.SetTrigger("attack");
 
             //attack is instantiated
             Instantiate(attackPrefab, transform);
