@@ -1031,6 +1031,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5169739080029218217, guid: 28795eb9e66179a4fae078d8fb21a091, type: 3}
   m_PrefabInstance: {fileID: 102351990}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &109537050 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4957027602049920531, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+  m_PrefabInstance: {fileID: 183473884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110172905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,11 +1579,12 @@ PrefabInstance:
         Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"animator":{"_value":3,"_name":"animator","_id":"2a99f4ab-7df5-4ffd-8c68-38defe64964a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.data[1]
@@ -1588,6 +1594,10 @@ PrefabInstance:
       propertyPath: _objectReferences.Array.data[2]
       value: 
       objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 109537050}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _serializedVariables.Array.data[2]._json
       value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
@@ -4237,7 +4247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365734178}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1362804, y: 0.000000017045853, z: -0.000000002344893, w: 0.9906703}
+  m_LocalRotation: {x: 0.1362804, y: -8.7187986e-16, z: 1.8943606e-17, w: 0.9906703}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9419,6 +9429,11 @@ Transform:
   - {fileID: 788256045}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &766547953 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4957027602049920531, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+  m_PrefabInstance: {fileID: 1417771329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &769566241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12222,7 +12237,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1182381, y: 0.000000008542841, z: -0.0000000010172249, w: 0.99298525}
+  m_LocalRotation: {x: 0.1182381, y: -0.000000008311783, z: 9.89712e-10, w: 0.99298525}
   m_LocalPosition: {x: 18, y: 4.8634777, z: 3.006194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12474,7 +12489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964289214}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11823809, y: 0.0000000042714206, z: -5.0861243e-10, w: 0.9929853}
+  m_LocalRotation: {x: 0.11823809, y: -0.0000000037882226, z: 4.5107632e-10, w: 0.9929853}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16996,6 +17011,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283392502}
   m_CullTransparentMesh: 1
+--- !u!95 &1291701914 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4957027602049920531, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+  m_PrefabInstance: {fileID: 1436815504}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1295521478
 GameObject:
   m_ObjectHideFlags: 0
@@ -18980,11 +19000,12 @@ PrefabInstance:
         Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"animator":{"_value":3,"_name":"animator","_id":"2a99f4ab-7df5-4ffd-8c68-38defe64964a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.data[1]
@@ -18994,6 +19015,10 @@ PrefabInstance:
       propertyPath: _objectReferences.Array.data[2]
       value: 
       objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 766547953}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _serializedVariables.Array.data[2]._json
       value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
@@ -19095,11 +19120,12 @@ PrefabInstance:
         Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"animator":{"_value":3,"_name":"animator","_id":"2a99f4ab-7df5-4ffd-8c68-38defe64964a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.data[1]
@@ -19109,6 +19135,10 @@ PrefabInstance:
       propertyPath: _objectReferences.Array.data[2]
       value: 
       objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 1291701914}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _serializedVariables.Array.data[2]._json
       value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
@@ -20599,7 +20629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1562765860}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10020442, y: -0, z: -0, w: 0.99496686}
+  m_LocalRotation: {x: 0.10020442, y: 2.1832354e-16, z: -3.9971028e-17, w: 0.99496686}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24707,6 +24737,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1837796606143231718, guid: 83aa8c4df9a9e734bb819faa67a33818, type: 3}
   m_PrefabInstance: {fileID: 1905744415}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1914972205 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4957027602049920531, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+  m_PrefabInstance: {fileID: 2118011206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1915104649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6558492588710654740, guid: b3cd17901b6f1584396fac62a89138d9, type: 3}
@@ -27993,11 +28028,12 @@ PrefabInstance:
         Distance":{"_value":5.0,"_name":"Stop Distance","_id":"ad56c712-5af3-45c7-b73d-1a78c11fbc0c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"AttackTelegraph":{"_value":2,"_name":"AttackTelegraph","_id":"3aa0aa49-8c48-4721-8cb6-6a0f8df520e7","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"Timer":{"_value":0.5,"_name":"Timer","_id":"ab8e76bf-b8a9-4768-b9b5-292045b8b21d","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"animator":{"_value":3,"_name":"animator","_id":"2a99f4ab-7df5-4ffd-8c68-38defe64964a","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Animator,
+        UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _objectReferences.Array.data[1]
@@ -28007,6 +28043,10 @@ PrefabInstance:
       propertyPath: _objectReferences.Array.data[2]
       value: 
       objectReference: {fileID: 3570986888440342907, guid: 92c07c0341c19d1489f0b10ab09254d9, type: 3}
+    - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
+      propertyPath: _objectReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 1914972205}
     - target: {fileID: 3156660922933187682, guid: dfe3a8a3c1a30b649b2c02d1604bb344, type: 3}
       propertyPath: _serializedVariables.Array.data[2]._json
       value: '{"_value":1,"_name":"Player","_id":"e69f0a01-e421-465d-956d-e963bfdc58a2","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.GameObject,
