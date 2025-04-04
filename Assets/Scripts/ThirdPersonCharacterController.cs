@@ -1,6 +1,7 @@
 using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -17,7 +18,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private GameObject _speedTrail;
 
     //Setup variables for slots. Have bools as well
-    [SerializeField] private GameObject uiSlot1, uiSlot2, uiSlot3;
+    [SerializeField] private GameObject uiSlot1, uiSlot2, uiSlot3, icon1,icon2;
     private bool isUiSlot1Active, isUiSlot2Active, isUiSlot3Active;
 
     [SerializeField] private GameObject adaptationsShop;
@@ -733,6 +734,15 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     public void UIDisplay(GameObject icon)
     {
+        if(isUiSlot1Active == false)
+        {
+            icon1 = icon;
+        }
+        else if(isUiSlot2Active == false)
+        {
+            icon2 = icon;
+        }
+
         if (isUiSlot1Active == false)
         {
             icon.transform.position = uiSlot1.transform.position;
@@ -759,6 +769,9 @@ public class ThirdPersonCharacterController : MonoBehaviour
         else if (isUiSlot2Active == true)
         {
             isUiSlot2Active = false;
+            icon2.transform.position = uiSlot1.transform.position;
+            icon1 = icon2;
+
         }
         else if (isUiSlot1Active == true)
         {
