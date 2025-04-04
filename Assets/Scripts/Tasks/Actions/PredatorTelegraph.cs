@@ -19,6 +19,7 @@ public class PredatorTelegraph : ActionTask
     protected override void OnExecute()
     {
         timePassed = 0f;
+        
         animator.value.SetBool("chargingUp", true);
     }
 
