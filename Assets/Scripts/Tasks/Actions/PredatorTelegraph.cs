@@ -14,9 +14,12 @@ public class PredatorTelegraph : ActionTask
     public BBParameter<float> stopDistance;
     public float timePassed;
 
+    public BBParameter<Animator> animator;
+
     protected override void OnExecute()
     {
         timePassed = 0f;
+        animator.value.SetBool("chargingUp", true);
     }
 
     protected override void OnUpdate()
@@ -33,6 +36,7 @@ public class PredatorTelegraph : ActionTask
         timePassed += Time.deltaTime;
         if (timePassed > 0.5)
         {
+            animator.value.SetBool("chargingUp", false);
             EndAction(true);
         }
     }
