@@ -152,8 +152,8 @@ ModelImporter:
       name: predatorDie
       takeName: Armature|ArmatureAction
       internalID: 5401091116426756364
-      firstFrame: 332
-      lastFrame: 348
+      firstFrame: 352
+      lastFrame: 360
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -181,7 +181,7 @@ ModelImporter:
       name: predatorDeathIdle
       takeName: Armature|ArmatureAction
       internalID: -6363362177140661055
-      firstFrame: 348
+      firstFrame: 357
       lastFrame: 360
       wrapMode: 0
       orientationOffsetY: 0
@@ -189,7 +189,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
