@@ -29,6 +29,8 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private GameObject fasterHealingButton;
     [SerializeField] private GameObject largeAttackButton;
     [SerializeField] private GameObject fasterAttackButton;
+    [SerializeField] private GameObject sellButton1, sellButton2, sellButton3, sellButton4, sellButton5, sellButton6, sellButton7, sellButton8;
+
 
     [SerializeField] private GameObject maxAdaptationErrorUI;
 
@@ -424,6 +426,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 isJumpBoostActive = true; //set it to active because now the player owns it
                 jumpBoostButton.SetActive(true); //displays adaptation icon 
                 currentAdaptations++; //increases adaptation count
+                sellButton1.SetActive(true);
             }
             else if (isJumpBoostActive == true) //if they clicked on the button while they own the adaptation already (selling the adaptation)
             {
@@ -432,6 +435,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += jumpBoostCost / 2; //give player half the money back
                 isJumpBoostOwned = false; //player no longer owns the adaptation
                 currentAdaptations--; //decrease adaptation count
+                sellButton1.SetActive(false);
                 UIUndisplay();
             }
         }
@@ -443,7 +447,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
-
+    
     public void SpeedBoostButtonHandler()
     {
         if (speedBoostCost <= totalCurrency && isSpeedBoostOwned == false && currentAdaptations < maxAdaptations)
@@ -459,6 +463,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 isSpeedBoostActive = true;
                 speedBoostButton.SetActive(true);
                 currentAdaptations++;
+                sellButton2.SetActive(true);
             }
             else if (isSpeedBoostActive == true)
             {
@@ -467,6 +472,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += speedBoostCost / 2;
                 isSpeedBoostOwned = false;
                 currentAdaptations--;
+                sellButton2.SetActive(false);
                 UIUndisplay();
             }
         }
@@ -496,6 +502,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 isSmallerSizeActive = true;
                 smallSizeButton.SetActive(true);
                 this.transform.localScale = transform.localScale * smallSizeMultiplier; //makes player smaller
+                sellButton3.SetActive(true);
                 currentAdaptations++;
             }
             else if (isSmallerSizeActive == true)
@@ -506,6 +513,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += smallerSizeCost / 2;
                 isSmallerSizeOwned = false;
                 currentAdaptations--;
+                sellButton3.SetActive(false);
                 UIUndisplay();
             }
 
@@ -537,6 +545,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 largeSizeButton.SetActive(true);
                 this.transform.localScale = transform.localScale * largeSizeMultiplier; //makes player larger
                 currentAdaptations++;
+                sellButton4.SetActive(true);
             }
             else if (isLargerSizeOwned == true)
             {
@@ -546,6 +555,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += smallerSizeCost / 2;
                 isLargerSizeOwned = false;
                 currentAdaptations--;
+                sellButton4.SetActive(false);
                 UIUndisplay();
             }
 
@@ -577,6 +587,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 moreHealthButton.SetActive(true);
                 playerHealth.HealthCheck(newMaxHealth); //sends float to the HealthCheck() method in the PlayerHealth script
                 currentAdaptations++;
+                sellButton5.SetActive(true);
             }
             else if (isMoreHealthOwned == true)
             {
@@ -586,6 +597,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += moreHealthCost / 2;
                 isMoreHealthOwned = false;
                 currentAdaptations--;
+                sellButton5.SetActive(false);
                 UIUndisplay();
             }
 
@@ -617,6 +629,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 fasterHealingButton.SetActive(true);
                 healingSpeedMultiplier = healingSpeedMultiplier * 1.5f; //makes health regen faster
                 currentAdaptations++;
+                sellButton6.SetActive(true);
             }
             else if (isFasterHealingOwned == true)
             {
@@ -626,6 +639,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += fasterHealingCost / 2;
                 isFasterHealingOwned = false;
                 currentAdaptations--;
+                sellButton6.SetActive(false);
                 UIUndisplay();
             }
 
@@ -655,6 +669,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 largeAttackButton.SetActive(true);
                 attackPrefab.transform.localScale = transform.localScale * attackSizeMultiplier; //makes attack bigger
                 currentAdaptations++;
+                sellButton7.SetActive(true);
             }
             else if (isLargerAttackActive == true)
             {
@@ -664,6 +679,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += largerAttackCost/ 2;
                 isLargerAttackOwned = false;
                 currentAdaptations--;
+                sellButton7.SetActive(false);
                 UIUndisplay();
             }
         }
@@ -692,6 +708,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 fasterAttackButton.SetActive(true);
                 attackSpeedMultiplier = attackSpeedMultiplier * 1.5f; //makes attack faster
                 currentAdaptations++;
+                sellButton8.SetActive(true);
             }
             else if (isFasterAttackActive == true)
             {
@@ -701,6 +718,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 totalCurrency += fasterAttackCost / 2;
                 isFasterAttackOwned = false;
                 currentAdaptations--;
+                sellButton8.SetActive(false);
                 UIUndisplay();
             }
         }
