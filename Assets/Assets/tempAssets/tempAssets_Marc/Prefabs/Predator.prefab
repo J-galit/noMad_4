@@ -517,6 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 12
   _healthText: {fileID: 7863998850305079351}
+  animator: {fileID: 4957027602049920531}
 --- !u!1001 &7270099877182666484
 PrefabInstance:
   m_ObjectHideFlags: 0
