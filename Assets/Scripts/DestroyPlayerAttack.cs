@@ -8,24 +8,35 @@ public class DestroyPlayerAttack : MonoBehaviour
 {
     private ThirdPersonCharacterController thirdPersonCharacterController;
     [SerializeField] private GameObject _newAttack;
-    [SerializeField] private GameObject _fastAttack; 
-    
+    [SerializeField] private GameObject _fastAttack;
+
+    [SerializeField] private VisualEffect[] vfxGraphs;
+
+    [GradientUsage(true)]
+    [SerializeField] private Gradient baseColour;
+    [GradientUsage(true)]
+    [SerializeField] private Gradient fastColour;
+
 
     private void Awake()
     {
         thirdPersonCharacterController = GameObject.Find("Player").GetComponent<ThirdPersonCharacterController>();
+        if (thirdPersonCharacterController.isFasterAttackActive)
+        {
+            foreach (VisualEffect clawGraph in vfxGraphs)
+                clawGraph.SetGradient(Shader.PropertyToID("ClawColour"), fastColour);
+        }
+        else
+        {
+            foreach (VisualEffect clawGraph in vfxGraphs)
+                clawGraph.SetGradient(Shader.PropertyToID("ClawColour"), baseColour);
+        }
+
     }
 
     void Start()
     {
-        if (thirdPersonCharacterController.isFasterAttackActive)
-        {
-            //should be blue
-        }
-        else
-        {
-            //should be orange
-        }
+        
 
         if (thirdPersonCharacterController.isLargerAttackActive == true)
         {
