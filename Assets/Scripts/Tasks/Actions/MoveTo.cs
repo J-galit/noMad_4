@@ -20,7 +20,6 @@ public class MoveTo : ActionTask
         boostedMoveSpeed.value = moveSpeed * 2;
 
         animator.value.SetBool("isMoving", true);
-        
     }
 
     protected override void OnUpdate()
@@ -51,7 +50,6 @@ public class MoveTo : ActionTask
         if (Vector3.Distance(agent.transform.position, location.value.position)< stopDistance.value)
         {
             animator.value.SetBool("isMoving", false);
-            
             EndAction(true);
         }
     }

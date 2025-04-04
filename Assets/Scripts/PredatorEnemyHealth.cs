@@ -14,8 +14,6 @@ public class PredatorEnemyHealth : MonoBehaviour
 
     private bool isIFramesActive;
 
-    [SerializeField] private Animator animator;
-
     private void Awake()
     {
         isIFramesActive = false;
@@ -74,9 +72,8 @@ public class PredatorEnemyHealth : MonoBehaviour
 
     private IEnumerator DeathCoroutine()
     {
-        //transform.localRotation = Quaternion.Euler(0, 0, -90);
-        animator.SetBool("isDead", true);
-        yield return new WaitForSeconds(1f);
+        transform.localRotation = Quaternion.Euler(0, 0, -90);
+        yield return new WaitForSeconds(0.2f);
         Destroy(gameObject);
     }
 

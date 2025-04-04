@@ -17,15 +17,11 @@ public class MoveToWithTimer : ActionTask
     public BBParameter<float> timer;
     public float timePassed;
 
-    public BBParameter<Animator> animator;
-
     protected override void OnExecute()
     {
         //used to speed up player and ally NPC
         boostedMoveSpeed.value = moveSpeed * 2;
         timePassed = 0f;
-       
-        animator.value.SetBool("isMoving", true);
     }
 
     protected override void OnUpdate()
@@ -33,7 +29,6 @@ public class MoveToWithTimer : ActionTask
 
         ////ENEMY MOVES HERE *BUT* THIS IS ALSO USED TO ATTACK THE PLAYER
         Vector3 direction = SteeringUtility.Seek(agent.transform.position, location.value.position);
-
         agent.transform.Translate(moveSpeed * Time.deltaTime * direction, Space.World);
 
         Quaternion desiredRotation = Quaternion.LookRotation(direction);
@@ -57,8 +52,6 @@ public class MoveToWithTimer : ActionTask
         timePassed += Time.deltaTime;
         if (timePassed > timer.value)
         {
-            animator.value.SetBool("isMoving", false);
-            
             EndAction(true);
         }
     }
