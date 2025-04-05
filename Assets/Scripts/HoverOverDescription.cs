@@ -18,7 +18,7 @@ public class HoverOverDescription : MonoBehaviour, IPointerEnterHandler, IPointe
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKey(KeyCode.Tab) || Input.GetKey(KeyCode.Escape))
         {
             adaptationDesc.SetActive(false);
         }
