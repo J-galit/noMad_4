@@ -2195,7 +2195,8 @@ MonoBehaviour:
   isLargerSizeActive: 0
   largeSizeMultiplier: 1.5
   totalCurrency: 0
-  isInDen: 1
+  isInDen: 0
+  isShopping: 0
   cam: {fileID: 963194228}
   turnSmoothTime: 0.01
   characterController: {fileID: 0}

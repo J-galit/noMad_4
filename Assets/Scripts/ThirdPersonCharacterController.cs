@@ -107,7 +107,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private int totalCurrency;
     [SerializeField] private bool isInDen; //only serialized for debugging
     private bool isAbleToShop = true;
-    private bool isShopping = false;
+    [HideInInspector] public bool isShopping = false;
 
     [Header("Camera Parameters")]
     public Transform cam;

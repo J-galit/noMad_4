@@ -6,21 +6,29 @@ using UnityEngine.EventSystems;
 
 public class HoverOverDescription : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    private ThirdPersonCharacterController _thirdPersonCharacterController;
     [SerializeField] private GameObject adaptationDesc;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        _thirdPersonCharacterController = GameObject.Find("Player").GetComponent<ThirdPersonCharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            adaptationDesc.SetActive(false);
+        }
     }
 
+    public void DisableDescription()
+    {
+        adaptationDesc.SetActive(false);
 
+    }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
