@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class MoveToWithTimer : ActionTask
+public class MoveToWithTimer2 : ActionTask
 {
     public float moveSpeed;
     public BBParameter<float> defaultMoveSpeed;
@@ -24,8 +24,6 @@ public class MoveToWithTimer : ActionTask
         //used to speed up player and ally NPC
         boostedMoveSpeed.value = moveSpeed * 2;
         timePassed = 0f;
-
-        animator.value.SetBool("isMoving", true);
     }
 
     protected override void OnUpdate()
@@ -56,7 +54,6 @@ public class MoveToWithTimer : ActionTask
         timePassed += Time.deltaTime;
         if (timePassed > timer.value)
         {
-            animator.value.SetBool("isMoving", false);
             EndAction(true);
         }
     }
