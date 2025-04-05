@@ -18,7 +18,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     [SerializeField] private GameObject _speedTrail;
 
     //Setup variables for slots. Have bools as well
-    [SerializeField] private GameObject uiSlot1, uiSlot2, uiSlot3, icon1,icon2;
+    [SerializeField] private GameObject uiSlot1, uiSlot2, uiSlot3, icon1, icon2;
     private bool isUiSlot1Active, isUiSlot2Active, isUiSlot3Active;
 
     [SerializeField] private GameObject adaptationsShop;
@@ -34,6 +34,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
 
     [SerializeField] private GameObject maxAdaptationErrorUI;
+    [SerializeField] private GameObject cannotAffordErrorUI;
 
     [SerializeField] private int maxAdaptations;
     private int currentAdaptations;
@@ -139,7 +140,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         healingSpeedMultiplier = 1;
         characterController = GetComponent<CharacterController>();
         mainCamera = Camera.main;
-        
+
         UnityEngine.Cursor.visible = false;
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         _UICurrency = GameObject.Find("CurrencyText").GetComponent<UICurrency>();
@@ -151,7 +152,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
         inputHandler = PlayerInputHandler.Instance;
 
-        
+
         lastCheckpoint = transform.position;
         print(lastCheckpoint);
 
@@ -210,7 +211,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             //makes player move
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
 
-            
+
         }
         else animator.SetBool("isMoving", false);
 
@@ -219,7 +220,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         {
             OnAttack();
         }
-        
+
 
     }
     private void OnTriggerEnter(Collider other)
@@ -238,10 +239,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
             coinGetPlayer.Play();
         }
 
-        if(other.gameObject.tag == "SectionCheck")
+        if (other.gameObject.tag == "SectionCheck")
         {
             lastCheckpoint = transform.position;
-            _bugSpawner._sectionCheck+= 1;
+            _bugSpawner._sectionCheck += 1;
             _bugSpawner.FogActivation();
             Destroy(other.gameObject);
         }
@@ -280,7 +281,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             //checks if player pressed jump
             if (inputHandler.JumpTriggered)
             {
-            ////JUMP HAPPENS HERE
+                ////JUMP HAPPENS HERE
                 print("Jumping");
                 animator.SetBool("jumpRequested", true);
                 animator.SetBool("isFalling", false);
@@ -353,7 +354,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
                 //stops players from moving in the den
                 isShopping = true;
-                
+
                 adaptationsShop.SetActive(true);
                 //prevents shop from flickering on and off constantly
                 StartCoroutine(ShopCooldownCoroutine());
@@ -364,10 +365,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 UnityEngine.Cursor.visible = false;
                 UnityEngine.Cursor.lockState = CursorLockMode.Locked;
                 adaptationsShop.SetActive(false);
-                
+
                 //Allows players to move again while in the den
                 isShopping = false;
-                
+
                 //prevents shop from flickering on and off constantly
                 StartCoroutine(ShopCooldownCoroutine());
             }
@@ -408,7 +409,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     */
 
     //Adaptation methods follow a very similar format, will explain everything in jumpboost method, and only comment on unique things in other adaptation methods
-   
+
     public void JumpBoostButtonHandler()
     {
         //check if the player has enough currency to buy the adaptation
@@ -440,6 +441,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 UIUndisplay();
             }
         }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
+        }
         else if (currentAdaptations >= maxAdaptations) //if max adaptations reached
         {
             StartCoroutine(MaxAdaptationCoroutine()); //start error coroutine
@@ -448,7 +453,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
         _bugSpawner.CurrencyCheck(totalCurrency);
 
     }
-    
+
     public void SpeedBoostButtonHandler()
     {
         if (speedBoostCost <= totalCurrency && isSpeedBoostOwned == false && currentAdaptations < maxAdaptations)
@@ -476,6 +481,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 sellButton2.SetActive(false);
                 UIUndisplay();
             }
+        }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
         }
         else if (currentAdaptations >= maxAdaptations)
         {
@@ -510,7 +519,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             {
                 isSmallerSizeActive = false;
                 smallSizeButton.SetActive(false);
-                this.transform.localScale = transform.localScale /smallSizeMultiplier; //returns player to normal size
+                this.transform.localScale = transform.localScale / smallSizeMultiplier; //returns player to normal size
                 totalCurrency += smallerSizeCost / 2;
                 isSmallerSizeOwned = false;
                 currentAdaptations--;
@@ -519,7 +528,11 @@ public class ThirdPersonCharacterController : MonoBehaviour
             }
 
         }
-        else if(currentAdaptations >= maxAdaptations)
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
+        }
+        else if (currentAdaptations >= maxAdaptations)
         {
             StartCoroutine(MaxAdaptationCoroutine());
         }
@@ -552,7 +565,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
             {
                 isLargerSizeActive = false;
                 largeSizeButton.SetActive(false);
-                this.transform.localScale = transform.localScale/largeSizeMultiplier; //returns player to normal size
+                this.transform.localScale = transform.localScale / largeSizeMultiplier; //returns player to normal size
                 totalCurrency += smallerSizeCost / 2;
                 isLargerSizeOwned = false;
                 currentAdaptations--;
@@ -560,6 +573,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 UIUndisplay();
             }
 
+        }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
         }
         else if (currentAdaptations >= maxAdaptations)
         {
@@ -603,6 +620,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
             }
 
         }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
+        }
         else if (currentAdaptations >= maxAdaptations)
         {
             StartCoroutine(MaxAdaptationCoroutine());
@@ -645,6 +666,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
             }
 
         }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
+        }
         else if (currentAdaptations >= maxAdaptations)
         {
             StartCoroutine(MaxAdaptationCoroutine());
@@ -677,12 +702,16 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 isLargerAttackActive = false;
                 largeAttackButton.SetActive(false);
                 attackPrefab.transform.localScale = attackPrefab.transform.localScale / attackSizeMultiplier; //returns attack to base size
-                totalCurrency += largerAttackCost/ 2;
+                totalCurrency += largerAttackCost / 2;
                 isLargerAttackOwned = false;
                 currentAdaptations--;
                 sellButton7.SetActive(false);
                 UIUndisplay();
             }
+        }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
         }
         else if (currentAdaptations >= maxAdaptations)
         {
@@ -723,6 +752,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 UIUndisplay();
             }
         }
+        else if (jumpBoostCost > totalCurrency)
+        {
+            StartCoroutine(CannotAffordCoroutine());
+        }
         else if (currentAdaptations >= maxAdaptations)
         {
             StartCoroutine(MaxAdaptationCoroutine());
@@ -734,11 +767,11 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     public void UIDisplay(GameObject icon)
     {
-        if(isUiSlot1Active == false)
+        if (isUiSlot1Active == false)
         {
             icon1 = icon;
         }
-        else if(isUiSlot2Active == false)
+        else if (isUiSlot2Active == false)
         {
             icon2 = icon;
         }
@@ -783,8 +816,15 @@ public class ThirdPersonCharacterController : MonoBehaviour
     {
         maxAdaptationErrorUI.SetActive(true); //display error message
         yield return new WaitForSeconds(1f);
-        maxAdaptationErrorUI.SetActive(false); //turn of error message
+        maxAdaptationErrorUI.SetActive(false); //turn off error message
 
+    }
+
+    IEnumerator CannotAffordCoroutine()
+    {
+        cannotAffordErrorUI.SetActive(true); //display error message
+        yield return new WaitForSeconds(1f);
+        cannotAffordErrorUI.SetActive(false); //turn off error message
     }
 
     public void Respawn()
