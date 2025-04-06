@@ -10,6 +10,7 @@ TagManager:
   - EnemyAttack
   - SectionCheck
   - Fog
+  - End
   layers:
   - Default
   - TransparentFX
