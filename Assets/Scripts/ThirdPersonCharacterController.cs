@@ -122,11 +122,6 @@ public class ThirdPersonCharacterController : MonoBehaviour
     private Vector3 currentVelocity;
 
     //Audio variables 
-    [Header("Audio")]
-    public AudioSource coinGetPlayer;
-    public AudioSource enemyTakeDamagePlayer;
-    public AudioSource jumpPlayer;
-    public AudioSource highJumpPlayer;
 
     [Header("Animation")]
     [SerializeField] private Animator animator;
@@ -236,7 +231,6 @@ public class ThirdPersonCharacterController : MonoBehaviour
             totalCurrency += 100;
             _UICurrency.UpdateCurrency(totalCurrency);
             _bugSpawner.CurrencyCheck(totalCurrency);
-            coinGetPlayer.Play();
         }
 
         if (other.gameObject.tag == "SectionCheck")
@@ -289,13 +283,11 @@ public class ThirdPersonCharacterController : MonoBehaviour
                 {
                     //makes player jump higher
                     currentVelocity.y = jumpForce * jumpBoostMultiplier;
-                    highJumpPlayer.Play();
                 }
                 else
                 {
                     //makes player jump
                     currentVelocity.y = jumpForce;
-                    jumpPlayer.Play();
                 }
             }
             coyoteTimeCounter = 0; // Prevent multiple jumps in air
@@ -324,7 +316,6 @@ public class ThirdPersonCharacterController : MonoBehaviour
             //attack is instantiated
             Instantiate(attackPrefab, transform);
             isAttacking = true; //set to true to prevent multiple attacks at once
-            enemyTakeDamagePlayer.Play();
             //starts attack cooldown coroutine
             StartCoroutine(AttackCooldownCoroutine());
         }
