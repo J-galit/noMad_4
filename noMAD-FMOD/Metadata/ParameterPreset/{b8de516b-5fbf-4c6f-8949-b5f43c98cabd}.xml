@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{b8de516b-5fbf-4c6f-8949-b5f43c98cabd}">
+		<property name="name">
+			<value>StringStaccatoVolume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7c4b507e-853f-4bce-b869-823ce6d90920}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9206f024-664f-4c9e-a2bf-a498bead3832}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9206f024-664f-4c9e-a2bf-a498bead3832}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
